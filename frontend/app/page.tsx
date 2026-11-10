@@ -1,3 +1,4 @@
+"use client";
 
 const stats = [
   { label: "Total Applications", value: 0 },
@@ -40,12 +41,14 @@ export default function Home() {
       Recent Applications
     </h2>
 
-    <button
-      disabled
-      className="cursor-not-allowed rounded-lg bg-indigo-600 px-4 py-2 text-sm opacity-60"
-    >
-      + Add Application
-    </button>
+    
+<button
+  onClick={() => alert("Add Application clicked!")}
+  className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-500"
+>
+  + Add Application
+</button>
+
   </div>
 
   <div className="rounded-lg border border-dashed border-slate-700 py-12 text-center">
@@ -57,7 +60,6 @@ export default function Home() {
     </p>
   </div>
 </section>
-
       </div>
     </main>
   );
