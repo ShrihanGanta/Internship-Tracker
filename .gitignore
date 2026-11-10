@@ -1,1 +1,10 @@
 .DS_Store
+
+# Python virtual environments
+backend/venv/
+backend/.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
