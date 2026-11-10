@@ -33,6 +33,31 @@ export default function Home() {
             </div>
           ))}
         </div>
+         
+<section className="mt-10 rounded-xl border border-slate-800 bg-slate-900 p-6">
+  <div className="mb-6 flex items-center justify-between">
+    <h2 className="text-xl font-semibold">
+      Recent Applications
+    </h2>
+
+    <button
+      disabled
+      className="cursor-not-allowed rounded-lg bg-indigo-600 px-4 py-2 text-sm opacity-60"
+    >
+      + Add Application
+    </button>
+  </div>
+
+  <div className="rounded-lg border border-dashed border-slate-700 py-12 text-center">
+    <p className="text-slate-400">
+      No applications yet.
+    </p>
+    <p className="mt-2 text-sm text-slate-500">
+      Your internship applications will appear here.
+    </p>
+  </div>
+</section>
+
       </div>
     </main>
   );
